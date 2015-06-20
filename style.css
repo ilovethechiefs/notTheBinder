@@ -27,12 +27,22 @@ ul {
 #casesDiv {
   position: absolute;
   top: 23%;
+	left: 0;
   width: 80%;
-  height: 80%;
-  margin-left: 3%;
+	height: 0;
+	border: none;
 }
 
-
+#buttonDiv {
+	position: absolute;
+	top: 23%;
+	left: 82%;
+	width: 20%;
+	height: 80%;
+	padding: 2%;
+	text-align: left;
+	border: none;
+}
 
 .singleCase {
   position: relative;
@@ -40,13 +50,13 @@ ul {
   margin: 0px auto;
 	padding: 0;
   width: 85%;
-  height: 12%;
+  height: 60px;
 	text-align: center;
 }
 
 .singleCase p {
 	position: absolute;
-	top: 10d%;
+	top: 10%;
 	left: 0;
 	margin: 0px;
 	padding: 0;
@@ -77,5 +87,4 @@ ul {
 	height: 45%;
 	width: 20%;
 	font-size: 1em;
-
 }
