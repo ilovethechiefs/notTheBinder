@@ -20,13 +20,15 @@ ul {
 #headerBar {
   position: absolute;
   width: 100%;
-  height: 20%;
+  height: 100px;
+	top: 0;
+	left: 0;
   margin: 0px;
 }
 
 #casesDiv {
   position: absolute;
-  top: 23%;
+  top: 120px;
 	left: 0;
   width: 80%;
 	height: 0;
@@ -48,8 +50,9 @@ ul {
   position: relative;
 	background: #cccccc;
   margin: 0px auto;
+	margin-top: 3px;
 	padding: 0;
-  width: 85%;
+  width: 95%;
   height: 60px;
 	text-align: center;
 }
