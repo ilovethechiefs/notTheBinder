@@ -4,7 +4,7 @@ var insuranceNumber = 1;
 
 var singleCaseHTML = '<div class="singleCase"><p>Patient info</p><ul>\
                     <li><p>Scheduling</p></li><li><p>IDX</p></li><li><p>Precert</p></li>\
-                    <li><p>Confirmation</p></li><li><p>Cancel/Reschedule</p></li></ul></div>';
+                    <li><p>Confirmation</p></li><li><p>Cancel</p></li></ul></div>';
 
 var scheduleFormHTML = '<div id="darkenPage"></div><div id="scheduleForm"><div id="scheduleFormFieldsDiv">\
                             <table>\
