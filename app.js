@@ -1,8 +1,8 @@
 var phoneNumbers = 1;
 
 var singleCaseHTML = '<div class="singleCase"><p>Patient info</p><ul>\
-                    <li>Scheduling</li><li>IDX</li><li>Precert</li>\
-                    <li>Confirmation</li><li>Cancel/Reschedule</li></ul></div>';
+                    <li><p>Scheduling</p></li><li><p>IDX</p></li><li><p>Precert</p></li>\
+                    <li><p>Confirmation</p></li><li><p>Cancel/Reschedule</p></li></ul></div>';
 
 var scheduleDataEntryHTML = '<div id="darkenPage"></div><div id="dataEntry">\
                             <table>\

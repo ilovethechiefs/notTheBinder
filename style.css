@@ -80,14 +80,29 @@ ul {
 }
 
 .singleCase ul li {
+	position: relative;
   display: inline;
-	background: #292E37;
+	background: #404040;
 	float: left;
-	margin: 0;
-	padding: 0;
 	height: 45%;
 	width: 20%;
 	font-size: 1em;
+	text-align: left;
+	text-indent: 10px;
+	outline: 1px #000 solid;
+}
+
+.singleCase ul li:hover {
+	background: #cccccc;
+}
+
+.singleCase ul li p {
+	vertical-align: center;
+}
+
+.singleCase ul li:nth-child(5) {
+	padding: 0;
+	border: none;
 }
 
 #darkenPage {
