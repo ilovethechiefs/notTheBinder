@@ -19,6 +19,8 @@ hr {
 	box-shadow: 0 0 5px 1px black;
 	width: 90%;
 	margin: 0px auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
 	margin-left: 5%%;
 	margin-right: 5%;
 	padding: 0;
@@ -150,7 +152,7 @@ button:focus {
 	z-index: 3;
 }
 
-#dataEntry {
+#scheduleForm {
   position: relative;
   top: 5%;
   left: 5%;
@@ -161,7 +163,7 @@ button:focus {
 	outline: 1px solid black;
 }
 
-#dataEntryFieldsDiv {
+#scheduleFormFieldsDiv {
 	position: absolute;
 	width: 100%;
 	height: 90%;
@@ -174,7 +176,7 @@ button:focus {
 	outline: 1px solid black;
 }
 
-#dataEntryButtonDiv {
+#scheduleFormButtonDiv {
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -186,17 +188,142 @@ button:focus {
 	outline: 1px solid black;
 }
 
-#saveButton {
+#scheduleSaveButton {
 	margin: 8px;
 	margin-top: 15px;
 }
 
-#closeButton {
+#scheduleCloseButton {
 	margin: 8px;
 	margin-top: 15px;
+}
+
+#idxForm {
+	position: relative;
+  margin-top: 12%;
+  left: 25%;
+  width: 40%;
+	z-index: 5;
+	background-color: white;
+	border: none;
+	outline: 1px solid black;
+	text-align: center;
+}
+
+#idxFormFieldsDiv {
+	position: absolute;
+	width: 100%;
+	height: 80%;
+	background-color: white;
+	outline: 1px solid black;
+	border: none;
+}
+
+#idxFormButtonDiv {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+  width: 100%;
+  height: 20%;
+	background-color: white;
+	text-align: right;
+	border: none;
+	outline: 1px solid black;
+}
+
+#idxSaveButton {
+	margin: 2%;
+}
+
+#idxCloseButton {
+	margin: 2%;
+}
+
+#idxFormFieldsDiv table tr:nth-child(2) {
+	height: 150px;
+}
+
+#idxFormFieldsDiv table th {
+	margin: 0px auto;
+}
+
+#idxFormFieldsDiv table tr td {
+	width: 30%;
+}
+
+#idxFormFieldsDiv table tr td:hover {
+	background-color: #cccccc;
+}
+
+#precertForm {
+  position: relative;
+	left: 5%;
+	margin-top: 3%;
+  width: 90%;
+	z-index: 4;
+	background-color: white;
+	border: none;
+	outline: 1px solid black;
+}
+
+#precertFormFieldsDiv {
+	position: absolute;
+	width: 100%;
+	height: 90%;
+	background-color: white;
+	text-align: left;
+	border: none;
+	overflow: scroll;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	outline: 1px solid black;
+}
+
+#precertFormButtonDiv {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+  width: 100%;
+  height: 10%;
+	background-color: white;
+	text-align: right;
+	border: none;
+	outline: 1px solid black;
+}
+
+#precertSaveButton {
+	margin: 8px;
+	margin-top: 15px;
+}
+
+#precertCloseButton {
+	margin: 8px;
+	margin-top: 15px;
+}
+
+#precertForm #precertInsuranceTable tr {
+	float: left;
+}
+
+#precertForm #precertInsuranceTable tr td textarea {
+	height: 30%;
 }
 
 #notesTable {
+	border-spacing: 20px;
+	text-align: center;
+	width: 80%;
+	margin: 0px auto;
+}
+
+#precertNotesTable {
+	border-spacing: 20px;
+	text-align: center;
+	width: 80%;
+	margin: 0px auto;
+}
+
+#reservationTasking {
 	border-spacing: 20px;
 	text-align: center;
 	width: 80%;
