@@ -58,7 +58,7 @@ button:focus {
 	top: 0;
 	left: 0;
   margin: 0px;
-	z-index: 9999;
+	z-index: 10;
 	background-color: white;
 }
 
@@ -73,7 +73,7 @@ button:focus {
 
 #buttonDiv {
 	position: fixed;
-	top: 23%;
+	top: 10%;
 	left: 82%;
 	width: 20%;
 	height: 80%;
@@ -152,15 +152,14 @@ button:focus {
 	height: 100%;
 	background-color: gray;
 	opacity: .8;
-	z-index: 3;
+	z-index: 20;
 }
 
 #scheduleForm {
   position: relative;
-  top: 5%;
   left: 5%;
   width: 90%;
-	z-index: 4;
+	z-index: 30;
 	background-color: white;
 	border: none;
 	outline: 1px solid black;
@@ -206,7 +205,7 @@ button:focus {
   margin-top: 12%;
   left: 25%;
   width: 40%;
-	z-index: 5;
+	z-index: 30;
 	background-color: white;
 	border: none;
 	outline: 1px solid black;
@@ -263,7 +262,7 @@ button:focus {
 	left: 5%;
 	margin-top: 3%;
   width: 90%;
-	z-index: 4;
+	z-index: 30;
 	background-color: white;
 	border: none;
 	outline: 1px solid black;
