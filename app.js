@@ -275,7 +275,7 @@ function addPhoneNumber() {
 
 function addProcedure() {
   procedureNumber++;
-  var newProcedureHTML = '</tr></table><table><tr>\
+  var newProcedureHTML = '</tr><tr>\
                           <td>Procedure:</td><td><input type="text" name="procedureNumber'+procedureNumber+'"></td>\
                           <td>Side:</td><td><input type="text" name="procedureSide'+procedureNumber+'"></td>\
                           <td><button id="addProcedureButton'+procedureNumber+'" type="button">Add procedure</button>';
@@ -300,30 +300,45 @@ function closeScheduleForm() {
   $('#darkenPage').remove();
   $('#scheduleForm').remove();
   $('body').css("overflow", "auto");
+  phoneNumbers = 1;
+  procedureNumber = 1;
+  insuranceNumber = 1;
 }
 
 function closeIDXForm() {
   $('#darkenPage').remove();
   $('#idxForm').remove();
   $('body').css("overflow", "auto");
+  phoneNumbers = 1;
+  procedureNumber = 1;
+  insuranceNumber = 1;
 }
 
 function closePrecertForm() {
   $('#darkenPage').remove();
   $('#precertForm').remove();
   $('body').css("overflow", "auto");
+  phoneNumbers = 1;
+  procedureNumber = 1;
+  insuranceNumber = 1;
 }
 
 function closeConfirmationForm() {
   $('#darkenPage').remove();
   $('#confirmationForm').remove();
   $('body').css("overflow", "auto");
+  phoneNumbers = 1;
+  procedureNumber = 1;
+  insuranceNumber = 1;
 }
 
 function closeCancelationForm() {
   $('#darkenPage').remove();
   $('#cancelationForm').remove();
   $('body').css("overflow", "auto");
+  phoneNumbers = 1;
+  procedureNumber = 1;
+  insuranceNumber = 1;
 }
 
 function precertAddInsurance() {
