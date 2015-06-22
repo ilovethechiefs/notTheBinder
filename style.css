@@ -331,3 +331,93 @@ button:focus {
 	width: 80%;
 	margin: 0px auto;
 }
+
+#confirmationForm {
+  position: relative;
+	left: 5%;
+	margin-top: 3%;
+  width: 90%;
+	z-index: 30;
+	background-color: white;
+	border: none;
+	outline: 1px solid black;
+}
+
+#confirmationFormFieldsDiv {
+	position: absolute;
+	width: 100%;
+	height: 90%;
+	background-color: white;
+	outline: 1px solid black;
+	border: none;
+}
+
+#confirmationFormButtonDiv {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+  width: 100%;
+  height: 10%;
+	background-color: white;
+	text-align: right;
+	border: none;
+	outline: 1px solid black;
+}
+
+#confirmationSaveButton {
+	margin: 8px;
+	margin-top: 15px;
+}
+
+#confirmationCloseButton {
+	margin: 8px;
+	margin-top: 15px;
+}
+
+#leftMessage {
+	width: 80%;
+	text-align: left;
+}
+
+#messageNotes {
+	column-span: 2;
+	width: 500px;
+}
+
+#cancelationForm {
+	position: relative;
+  margin-top: 12%;
+  left: 25%;
+  width: 40%;
+	z-index: 30;
+	background-color: white;
+	border: none;
+	outline: 1px solid black;
+	text-align: center;
+}
+
+#cancelationFormFieldsDiv {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	text-align: center;
+	border: none;
+	outline: 1px solid black;
+}
+
+#cancelationFormFieldsDiv table tr:nth-child(2) {
+	height: 150px;
+}
+
+#cancelationFormFieldsDiv table th {
+	margin: 0px auto;
+}
+
+#cancelationFormFieldsDiv table tr td {
+	width: 30%;
+}
+
+#cancelationFormFieldsDiv table tr td:hover {
+	background-color: #cccccc;
+}

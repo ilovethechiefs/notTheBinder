@@ -43,6 +43,13 @@ var scheduleFormHTML = '<div id="darkenPage"></div><div id="scheduleForm"><div i
                             </tr>\
                             </table>\
                             <hr>\
+                            <table>\
+                            <tr>\
+                            <td>Pre-op appointment:</td><td><input type="text" name="preopApptInput"></td>\
+                            <td>Same Day Measurements?</td><td><input type="text" name="sdmInput"></td>\
+                            </tr>\
+                            </table>\
+                            <hr>\
                             <table id="notesTable">\
                             <tr>\
                             <td>Notes for Reservation:</td>\
@@ -135,6 +142,51 @@ var precertFormHTML = '<div id="darkenPage"></div><div id="precertForm"><div id=
                       Close without saving</button></div>\
                       </div>';
 
+var confirmationFormHTML = '<div id="darkenPage"></div><div id="confirmationForm"><div id="confirmationFormFieldsDiv">\
+                            <table>\
+                            <tr>\
+                            <td>Patient Name:</td><td><input type="text" name="patientNameInput"></td>\
+                            </tr>\
+                            <tr>\
+                            <td>Date of Birth:</td><td><input type="text" name="dateOfBirthInput"></td>\
+                            </tr>\
+                            </table>\
+                            <hr>\
+                            <table>\
+                            <tr>\
+                            <td>Date of confirmation call:</td><td><input type="text" name="confirmationInput"></td>\
+                            </tr>\
+                            <tr>\
+                            <td>Who is coming with the patient?</td><td><input type="text" name="comingWith"></td>\
+                            </tr>\
+                            <tr>\
+                            <td>Insurance Okay?</td><td><input type="text" name="insuranceOkay"></td>\
+                            </tr>\
+                            </table>\
+                            <table id="leftMessage">\
+                            <tr>\
+                            <td>Left Message:</td>\
+                            </tr>\
+                            <tr>\
+                            <td><textarea id="messageNotes"></textarea></td>\
+                            </tr>\
+                            </table>\
+                            <hr>\
+                            </div>\
+                            <div id="confirmationFormButtonDiv"><button id="confirmationSaveButton" type="button">\
+                            Save</button><button id="confirmationCloseButton" type="button">\
+                            Close without saving</button></div>\
+                            </div>';
+
+var cancelationFormHTML = '<div id="darkenPage"></div><div id="cancelationForm"><div id="cancelationFormFieldsDiv">\
+                          <table>\
+                          <th colspan=2>Would you like to reschedule this case?</th>\
+                          <tr>\
+                          <td>Yes</td><td>No</td>\
+                          </tr>\
+                          </table>\
+                          </div>';
+
 var main = function() {
   $("#addCaseButton").click(addCase);
 }
@@ -189,15 +241,23 @@ function precertButton() {
 }
 
 function confirmationButton() {
-  alert("confirmationButton");
+  $("html").append(confirmationFormHTML);
+  $("#confirmationForm").height(.75*screen.height);
+  $('body').css("overflow", "hidden");
+  $("#confirmationSaveButton").on("click", closeConfirmationForm);
+  $("#confirmationCloseButton").on("click", closeConfirmationForm);
 }
 
 function cancelButton() {
+  $("html").append(cancelationFormHTML);
+  $("#cancelationForm").height(.25*screen.height);
+  $('body').css("overflow", "hidden");
   $(this).parent().parent().remove();
   if ($("#casesDiv").children().length == 0) {
     $("#casesDiv").css("border", "none");
   }
   $("#casesDiv").height('-=70px');
+  $("#cancelationFormFieldsDiv table tr td").click(closeCancelationForm);
 }
 
 function addPhoneNumber() {
@@ -211,8 +271,6 @@ function addPhoneNumber() {
   $(newPhoneHTML).insertAfter($("#addPhoneButton"+(phoneNumbers-1)).parent().parent());
   $("#addPhoneButton"+phoneNumbers).on("click", addPhoneNumber);
   $("#addPhoneButton"+(phoneNumbers-1)).remove();
-
-  //$(newPhoneButtonHTML).insertAfter($("[name='phoneNumberName"+phoneNumbers+"]'"));
 }
 
 function addProcedure() {
@@ -253,6 +311,18 @@ function closeIDXForm() {
 function closePrecertForm() {
   $('#darkenPage').remove();
   $('#precertForm').remove();
+  $('body').css("overflow", "auto");
+}
+
+function closeConfirmationForm() {
+  $('#darkenPage').remove();
+  $('#confirmationForm').remove();
+  $('body').css("overflow", "auto");
+}
+
+function closeCancelationForm() {
+  $('#darkenPage').remove();
+  $('#cancelationForm').remove();
   $('body').css("overflow", "auto");
 }
 
