@@ -92,7 +92,6 @@ var precertFormHTML = '<div id="darkenPage"></div><div id="precertForm"><div id=
                       <tr>\
                       <td>Procedure:</td><td><input type="text" name="procedureNumber'+procedureNumber+'"></td>\
                       <td>Side:</td><td><input type="text" name="procedureSide'+procedureNumber+'"></td>\
-                      <td><button id="addProcedureButton'+procedureNumber+'" type="button">Add procedure</button>\
                       </tr>\
                       </table>\
                       <hr>\
