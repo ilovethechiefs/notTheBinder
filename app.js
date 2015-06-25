@@ -2,6 +2,11 @@ var phoneNumbers = 1;
 var procedureNumber = 1;
 var insuranceNumber = 1;
 
+var testObject = {
+  firstName: "John",
+  lastName: "Smith"
+};
+
 var singleCaseHTML = '<div class="singleCase"><p>Patient info</p><ul>\
                     <li><p>Scheduling</p></li><li><p>IDX</p></li><li><p>Precert</p></li>\
                     <li><p>Confirmation</p></li><li><p>Cancel</p></li></ul></div>';
@@ -223,6 +228,12 @@ function idxButton() {
   $("#idxFormFieldsDiv table td").on("click", function() {
     $("#idxFormFieldsDiv table td").css("background-color", "white")
     $(this).css("background-color", "#cccccc");
+    if ($(this).is(':nth-child(1)')) {
+       testObject.IDX = "Yes";
+    } else {
+        testObject.IDX = "No";
+    }
+    alert(testObject.IDX);
   });
   $("#idxSaveButton").on("click", closeIDXForm);
   $("#idxCloseButton").on("click", closeIDXForm);
@@ -311,6 +322,9 @@ function closeIDXForm() {
   phoneNumbers = 1;
   procedureNumber = 1;
   insuranceNumber = 1;
+
+
+
 }
 
 function closePrecertForm() {
